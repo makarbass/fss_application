@@ -1,0 +1,51 @@
+<!doctype html>
+ 
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Сведения о застрахованном лице</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body style="margin-left:30px;">
+<h2>Введите данные заявителя/его уполномоченного представителя</h2>
+<p><b>от кого</b></p>
+<form action="/postData/" method="POST" >
+  <p>Фамилия <input type="text" name="surname1" maxlength="22" placeholder="Иванова"> </p>
+  <p>Имя <input type="text" name="name1" maxlength="22" placeholder="Ивана"> </p>
+  <p>Отчество (при наличии) <input type="text" name="second_name1" maxlength="22" placeholder="Ивановича"></p>
+
+  <h2>Сведения о застрахованном лице</h2>
+  <p>Фамилия <input type="text" name="surname2" maxlength="24" placeholder="Иванов"></p>
+  <p>Имя <input type="text" name="name2" maxlength="24" placeholder="Иван"> </p>
+  <p>Отчество (при наличии) <input type="text" name="second_name2" maxlength="24" placeholder="Иванович"></p>
+
+  <p>Дата рождения (дд-мм-гггг): <input type="date" name="birth"></p>
+  <p>СНИЛС <input type="text" pattern="\d*" name="snils1" maxlength="3" > - 
+    <input type="text" pattern="\d*" name="snils2" min="0" maxlength="3"> - 
+    <input type="text" pattern="\d*" name="snils3" min="0" maxlength="3"> 
+    <input type="text" pattern="\d*" name="snils4" min="0" maxlength="2"></p>
+  <p>ИНН застрахованного лица <input type="text" pattern="\d*"  name="inn"  maxlength="12"></p>
+  <h2>Паспорт</h2>
+  <p>Серия <input type="text" pattern="\d*"  name="seria" maxlength="4"></p>
+  <p>Номер <input type="text" pattern="\d*"  name="number" maxlength="6"></p>
+  <p>Дата выдачи (дд-мм-гггг): <input type="date" name="pdate"></p>
+  <p>Кем выдан <input type="text" name="passportwho" maxlength="73"></p>
+  <h2>Сведения о месте регистрации:</h2>
+  <p>Индекс <input type="text" pattern="\d*"  name="index" maxlength="6"></p>
+  <p>Регион <input type="text" name="region" maxlength="24"></p>
+  <p>Район <input type="text" name="rayon" maxlength="24"></p>
+  <p>Город/населенный пункт <input type="text" name="city" maxlength="24"></p>
+  <p>Улица <input type="text" name="street" maxlength="24"></p>
+  <p>Дом <input type="text" name="dom" maxlength="7"> Корпус <input type="text" name="corp" maxlength="3"> Строение <input type="text" name="stroenie" maxlength="3"></p>
+  <p>Квартира <input type="text" name="kvartira" maxlength="5">
+  <h2>Сведения о банковском счете</h2>
+  <p>Наименование банка <input type="text" name="bankname" maxlength="73"></p>
+  <p>Счёт получателя № <input type="text" pattern="\d*" name="bs1" maxlength="20"></p>
+  <p>БИК <input type="text" pattern="\d*" name="bic" maxlength="9" ></p>
+  <p>Сведения о платежной карте МИР <input type="text" pattern="\d*" name="mir" maxlength="15" ></p>
+  <h2>Контактный номер телефона заявителя/его уполномоченного представителя (с указанием кода)</h2>
+  <p>+<input type="text" pattern="\d*"  name="phone" maxlength="11" ></p>
+  <input type="submit" >
+</form>
+</body>
+</html>
