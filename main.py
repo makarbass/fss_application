@@ -159,4 +159,4 @@ def template():
     return render_template("index.html") 
 
 if __name__ == "__main__":
-    app.run('10.238.3.216', 5000) 
+    app.run('127.0.0.1', 5000) 
